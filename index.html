@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from edutics.temptics.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 04:27:05 GMT -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edutics</title>
+	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+	<!-- plugins & libraries css -->
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+	<link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+
+	<!-- tailwind css -->
+	<link rel="stylesheet" href="src/output.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="ed-overlay group">
+		<div
+			class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto">
+		</div>
+	</div>
+
+	<!-- cart -->
+	<!-- <div class="ed-cart-bar group">
+		<div
+			class="w-[420px] max-w-full fixed z-[999] right-0 top-0 h-full bg-white flex flex-col translate-x-[100%] duration-[400ms] group-[.active]:translate-x-0">
+
+			<div class="flex items-center justify-between px-[25px] border-b border-edgray/20 pb-[23px] pt-[22px]">
+				<h5 class="text-[20px]">My Cart List</h5>
+				<h6>(03 Items)</h6>
+			</div>
+
+
+			<div>
+
+				<div class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20">
+					<img src="assets/img/cart-item-1.jpg" alt="Cart Item Image" class="rounded-[10px] shrink-0">
+					<div class="grow">
+						<h6 class="font-medium text-[18px] text-edblue"><a href="course-details.html"
+								class="hover:text-edpurple">Web Development</a></h6>
+						<h6 class="font-medium text-edgray">$15.00</h6>
+					</div>
+					<button class="text-[20px] text-edgray shrink-0 hover:text-edpurple">x</button>
+				</div>
+
+
+				<div class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20">
+					<img src="assets/img/cart-item-2.jpg" alt="Cart Item Image" class="rounded-[10px] shrink-0">
+					<div class="grow">
+						<h6 class="font-medium text-[18px] text-edblue"><a href="course-details.html"
+								class="hover:text-edpurple">Digital Marketing</a></h6>
+						<h6 class="font-medium text-edgray">$15.00</h6>
+					</div>
+					<button class="text-[20px] text-edgray shrink-0 hover:text-edpurple">x</button>
+				</div>
+
+	
+				<div class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20">
+					<img src="assets/img/cart-item-3.jpg" alt="Cart Item Image" class="rounded-[10px] shrink-0">
+					<div class="grow">
+						<h6 class="font-medium text-[18px] text-edblue"><a href="course-details.html"
+								class="hover:text-edpurple">WordPress Development</a></h6>
+						<h6 class="font-medium text-edgray">$15.00</h6>
+					</div>
+					<button class="text-[20px] text-edgray shrink-0 hover:text-edpurple">x</button>
+				</div>
+			</div>
+
+	
+			<div class="mt-auto px-[25px] mb-[30px]">
+				<div class="flex items-center justify-between font-medium text-[18px] text-edblue mb-[33px]">
+					<span>Total</span>
+					<span>$999</span>
+				</div>
+				<div class="space-y-[15px]">
+					<a href="#"
+						class="ed-btn w-full !rounded-[10px] !bg-transparent border border-edblue !text-edblue hover:!bg-edblue hover:!text-white">Proceed
+						to checkout</a>
+					<a href="#" class="ed-btn w-full !rounded-[10px]">Proceed to checkout</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<div class="ed-search group">
+		<form action="#"
+			class="bg-white fixed z-[100] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[100px] md:h-[70px] xxs:h-[50px] w-[1224px] max-w-[95%] flex gap-[10px] rounded-full overflow-hidden px-[40px] xxs:px-[20px] pointer-events-none opacity-0 group-[.active]:pointer-events-auto group-[.active]:opacity-100 duration-[400ms]">
+			<input type="search" name="ed-search" placeholder="Search Here..."
+				class="bg-transparent w-full focus:outline-none">
+			<button class="text-[25px] md:text-[22px] xxs:text-[20px]"><i class="fa-solid fa-magnifying-glass"></i></button>
+		</form>
+	</div>
+
+
+	<div class="ed-sidebar">
+		<div
+			class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[999] overflow-auto">
+			<!-- heading -->
+			<div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+				<div class="logo flex justify-between items-center">
+					<a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+
+					<button type="button"
+						class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i
+							class="fa-solid fa-xmark"></i></button>
+				</div>
+			</div>
+
+			<!-- mobile menu -->
+			<div class="ed-header-nav-in-mobile"></div>
+		</div>
+	</div>
+
+
+	<!-- HEADER SECTION START -->
+    <header class="absolute z-[99] top-0 inset-x-[100px] xxl:inset-x-[30px] xl:inset-x-0 bg-white rounded-bl-[10px] rounded-br-[10px]">
+        <!-- top header -->
+        <div class="bg-edblue flex items-center justify-between lg:justify-center lg:gap-x-[20px]">
+            <!-- contacts -->
+            <div class="flex items-center gap-x-[32px] xl:gap-x-[15px] gap-y-[6px] py-[18px] pl-[30px] xl:pl-[10px] lg:pl-0 lg:order-2 sm:pt-0 sm:pb-[10px] xl:hidden">
+                <!-- single contact -->
+                <a href="mailto:info@example.com" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/mail.svg" alt="icon">
+                    </span>
+                    <span>info@example.com</span>
+                </a>
+                <!-- single contact -->
+                <a href="tel:+20866660112" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/phone.svg" alt="icon">
+                    </span>
+                    <span>+208-6666-0112</span>
+                </a>
+            </div>
+
+            <!-- notice -->
+            <p class="font-medium text-white text-[16px] xxs:text-[14px] xl:pl-[15px] lg:order-1 lg:w-full lg:my-[10px] text-center lg:text-left sm:text-center">Edutics Flash Discount: Starting at <span class="text-edyellow">$3.49/mo</span> for a Limited time</p>
+
+            <!-- actions -->
+            <div class="shrink-0 flex items-center gap-x-[30px] xl:gap-x-[15px] text-white lg:order-3 sm:hidden">
+                <div class="flex gap-x-[30px] xl:gap-x-[15px]">
+                    <a href="#" class="flex items-center gap-x-[10px] font-light text-white/80"><span class="icon shrink-0"><img src="assets/img/icon/chat.svg" alt="icon"></span> Live Chat</a>
+                    <a href="#" class="flex items-center gap-x-[10px] font-light text-white/80"><span class="icon shrink-0"><img src="assets/img/icon/avatar.svg" alt="icon"></span> Login</a>
+                </div>
+                <a href="#" class="ed-btn !h-[60px] !rounded-none sm:!px-[15px]">Premium Access</a>
+            </div>
+        </div>
+
+        <!-- bottom header -->
+        <div class="px-[30px] xxl:px-[15px] lg:px-[20px] py-[28px] lg:py-[18px] flex justify-between to-be-fixed">
+            <div class="logo xxs:max-w-[40%]"><a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a></div>
+
+            <div class="flex lg:items-center lg:gap-[60px] xxs:gap-[30px]">
+                <div class="flex items-center gap-[100px] xl:gap-[30px] lg:gap-y-0">
+                    <!-- nav -->
+                    <div class="ed-header-nav-container">
+                        <ul class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                            <li class="has-sub-menu relative">
+                                <a href="index.html">Home</a>
+
+                                
+                            </li>
+                            <li><a href="about.html">About us</a></li>
+                            <li class="has-sub-menu relative">
+                                <a href="course-grid.html">Courses</a>
+                            </li>
+                            <li class="has-sub-menu relative">
+                                <a href="news-grid.html">News</a>
+                            </li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- right actions -->
+                    <div class="flex items-center gap-x-[60px] xxs:gap-[30px]">
+                        
+                        <a href="contact.html" class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]">apply now</a>
+                    </div>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-edblue text-[18px]"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+	<!-- HEADER SECTION END -->
+
+
+	<main>
+		<!-- BANNER SECTION START -->
+		<section>
+			<div class="ed-banner-slider swiper relative">
+					<div class="swiper-wrapper">
+							<!-- single slide -->
+							<div class="swiper-slide">
+									<div class="pt-[390px] md:pt-[300px] xs:pt-[280px] pb-[205px] bg-[url('assets/img/banner-bg-1.jpg')] bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+											<div class="mx-[10%] md:mx-[15px]">
+													<div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+															<h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to  <span class="text-edyellow">REVISOR LEARNING</span></h6>
+															<h2 class="font-bold text-[clamp(35px,4.57vw,80px)] leading-[1.13] mb-[15px]">Your One-Stop Destination for Cracking Competitive Exams!</h2>
+															<p class="leading-[1.75] mb-[41px]">Unlock your potential with the ultimate platform designed to make competitive exam success a reality. Learn smarter, prepare better, and achieve your dreams—all in one place!</p>
+															<div class="flex items-center gap-[20px]">
+																	<a href="contact.html" class="ed-btn">Apply now</a>
+																	<a href="about.html" class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About us</a>
+															</div>
+													</div>
+											</div>
+									</div>
+							</div>
+
+							<!-- single slide -->
+							<div class="swiper-slide">
+									<div class="pt-[390px] md:pt-[300px] xs:pt-[280px] pb-[205px] bg-[url('assets/img/banner-bg-2.jpg')] bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+											<div class="mx-[10%] md:mx-[15px]">
+													<div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+															<h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to <span class="text-edyellow">REVISOR LEARNING</span></h6>
+															<h2 class="font-bold text-[clamp(35px,4.57vw,80px)] leading-[1.13] mb-[15px]">All-in-One Learning Platform for Competitive Exam</h2>
+															<p class="leading-[1.75] mb-[41px]">Unlock your potential with the ultimate platform designed to make competitive exam success a reality. Learn smarter, prepare better, and achieve your dreams—all in one place!</p>
+															<div class="flex items-center gap-[20px]">
+																	<a href="#" class="ed-btn">Apply now</a>
+																	<a href="#" class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About us</a>
+															</div>
+													</div>
+											</div>
+									</div>
+							</div>
+					</div>
+
+					<!-- nav -->
+					<div class="ed-banner-slider-nav absolute z-[1] top-[50%] xs:top-[80%] right-[130px] md:right-[60px] sm:right-[40px] xs:hidden flex flex-col gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-white/20 *:text-white *:text-[18px]">
+							<button class="prev hover:bg-edyellow hover:border-edyellow hover:text-black"><i class="fa-solid fa-angle-up"></i></button>
+							<button class="next leading-[43px] hover:bg-edyellow hover:border-edyellow hover:text-black"><i class="fa-solid fa-angle-down"></i></button>
+					</div>
+			</div>
+	</section>
+		<!-- BANNER SECTION END -->
+
+
+	
+		<!-- CATEGORIES SECTION END -->
+
+
+		<!-- COURSES SECTION START -->
+		<section class="ed-2-courses py-[120px] xl:py-[80px] md:py-[60px]">
+			<div class="mx-[9.2%] xxxl:mx-[8.2%] xxl:mx-[3%]">
+				<!-- section heading -->
+				<div class="text-center mb-[21px]">
+					<h6 class="ed-section-sub-title">Our Courses</h6>
+					<h2 class="ed-section-title">Revisor's Courses</h2>
+				</div>
+
+				<div
+					class="ed-2-courses-filter-navs flex flex-wrap justify-center gap-[10px] mb-[40px] xs:mb-[30px] pb-[30px] xs:pb-[20px] border-b border-[#002147]/15 mx-[200px] lg:mx-[100px] md:mx-[12px] *:border *:border-edpurple *:rounded-[6px] *:py-[5px] *:px-[10px] *:text-edpurple *:font-medium *:text-[14px]">
+					<button class="hover:bg-edpurple hover:text-white" data-filter="all">All</button>
+					<button class="hover:bg-edpurple hover:text-white" data-filter=".personal-skill">Personal Skill</button>
+					<button class="hover:bg-edpurple hover:text-white" data-filter=".web-dev">Web Development</button>
+					<button class="hover:bg-edpurple hover:text-white" data-filter=".ui-ux-design">UX/UI Design</button>
+					<button class="hover:bg-edpurple hover:text-white" data-filter=".data-science">Data Science</button>
+					<button class="hover:bg-edpurple hover:text-white" data-filter=".finance">Finance</button>
+				</div>
+
+				<!-- course cards -->
+				<div
+					class="ed-2-courses-container grid grid-cols-4 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-[30px] xxl:gap-[20px]">
+					<!-- single course -->
+					<div class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+						<!-- course image  -->
+						<div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+							<img src="assets/img/course-1.jpg" alt="Course Image"
+								class="aspect-[330/223] w-full object-cover group-hover:scale-110">
+							<span
+								class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+								<span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+								<span class="txt">8h 30m</span>
+							</span>
+						</div>
+
+						<!-- course infos -->
+						<div class="flex justify-between items-center mb-[16px]">
+							<span
+								class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]">Expert</span>
+							<span class="text-edpurple font-semibold text-[20px]">$59.00</span>
+						</div>
+
+						<!-- course title -->
+						<h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="course-details.html"
+								class="hover:text-edpurple">Financial Analyst Training & Investing Course</a></h5>
+
+						<!-- course stats -->
+						<div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/user-group.svg" alt="icon"></span>
+								<span class="txt">169 Students</span>
+							</div>
+
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+								<span class="txt">12 Lesson</span>
+							</div>
+						</div>
+
+						<!-- course footer -->
+						<div
+							class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+							<!-- course author -->
+							<div class="flex items-center gap-[8px]">
+								<img src="assets/img/user.png" alt="Course Author Image" class="w-[34px] aspect-square object-cover">
+								<a href="teacher-details.html" class="hover:text-edpurple">Jane Cooper</a>
+							</div>
+
+							<!-- course rating -->
+							<div class="flex gap-[6px]">
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#808080]"><i class="fa-solid fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- single course -->
+					<div
+						class="ed-2-single-course mix web-dev data-science border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+						<!-- course image  -->
+						<div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+							<img src="assets/img/course-2.jpg" alt="Course Image"
+								class="aspect-[330/223] w-full object-cover group-hover:scale-110">
+							<span
+								class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+								<span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+								<span class="txt">8h 30m</span>
+							</span>
+						</div>
+
+						<!-- course infos -->
+						<div class="flex justify-between items-center mb-[16px]">
+							<span
+								class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]">Expert</span>
+							<span class="text-edpurple font-semibold text-[20px]">$59.00</span>
+						</div>
+
+						<!-- course title -->
+						<h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="course-details.html"
+								class="hover:text-edpurple">Financial Analyst Training & Investing Course</a></h5>
+
+						<!-- course stats -->
+						<div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/user-group.svg" alt="icon"></span>
+								<span class="txt">169 Students</span>
+							</div>
+
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+								<span class="txt">12 Lesson</span>
+							</div>
+						</div>
+
+						<!-- course footer -->
+						<div
+							class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+							<!-- course author -->
+							<div class="flex items-center gap-[8px]">
+								<img src="assets/img/user.png" alt="Course Author Image" class="w-[34px] aspect-square object-cover">
+								<a href="teacher-details.html" class="hover:text-edpurple">Jane Cooper</a>
+							</div>
+
+							<!-- course rating -->
+							<div class="flex gap-[6px]">
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#808080]"><i class="fa-solid fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- single course -->
+					<div class="ed-2-single-course mix ui-ux-design border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+						<!-- course image  -->
+						<div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+							<img src="assets/img/course-3.jpg" alt="Course Image"
+								class="aspect-[330/223] w-full object-cover group-hover:scale-110">
+							<span
+								class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+								<span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+								<span class="txt">8h 30m</span>
+							</span>
+						</div>
+
+						<!-- course infos -->
+						<div class="flex justify-between items-center mb-[16px]">
+							<span
+								class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]">Expert</span>
+							<span class="text-edpurple font-semibold text-[20px]">$59.00</span>
+						</div>
+
+						<!-- course title -->
+						<h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="course-details.html"
+								class="hover:text-edpurple">Financial Analyst Training & Investing Course</a></h5>
+
+						<!-- course stats -->
+						<div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/user-group.svg" alt="icon"></span>
+								<span class="txt">169 Students</span>
+							</div>
+
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+								<span class="txt">12 Lesson</span>
+							</div>
+						</div>
+
+						<!-- course footer -->
+						<div
+							class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+							<!-- course author -->
+							<div class="flex items-center gap-[8px]">
+								<img src="assets/img/user.png" alt="Course Author Image" class="w-[34px] aspect-square object-cover">
+								<a href="teacher-details.html" class="hover:text-edpurple">Jane Cooper</a>
+							</div>
+
+							<!-- course rating -->
+							<div class="flex gap-[6px]">
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#808080]"><i class="fa-solid fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- single course -->
+					<div class="ed-2-single-course mix finance border border-[#e5e5e5] rounded-[10px] p-[20px] group">
+						<!-- course image  -->
+						<div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+							<img src="assets/img/course-4.jpg" alt="Course Image"
+								class="aspect-[330/223] w-full object-cover group-hover:scale-110">
+							<span
+								class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]">
+								<span class="icon"><img src="assets/img/icon/clock.svg" alt="icon"></span>
+								<span class="txt">8h 30m</span>
+							</span>
+						</div>
+
+						<!-- course infos -->
+						<div class="flex justify-between items-center mb-[16px]">
+							<span
+								class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]">Expert</span>
+							<span class="text-edpurple font-semibold text-[20px]">$59.00</span>
+						</div>
+
+						<!-- course title -->
+						<h5 class="font-semibold text-[20px] text-edblue mb-[23px]"><a href="course-details.html"
+								class="hover:text-edpurple">Financial Analyst Training & Investing Course</a></h5>
+
+						<!-- course stats -->
+						<div class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]">
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/user-group.svg" alt="icon"></span>
+								<span class="txt">169 Students</span>
+							</div>
+
+							<div class="flex items-center gap-[8px] text-[14px] text-edgray">
+								<span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+								<span class="txt">12 Lesson</span>
+							</div>
+						</div>
+
+						<!-- course footer -->
+						<div
+							class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]">
+							<!-- course author -->
+							<div class="flex items-center gap-[8px]">
+								<img src="assets/img/user.png" alt="Course Author Image" class="w-[34px] aspect-square object-cover">
+								<a href="teacher-details.html" class="hover:text-edpurple">Jane Cooper</a>
+							</div>
+
+							<!-- course rating -->
+							<div class="flex gap-[6px]">
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#F8CB1E]"><i class="fa-solid fa-star"></i></span>
+								<span class="text-[#808080]"><i class="fa-solid fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- COURSES SECTION END -->
+
+
+		<!-- ABOUT SECTION START -->
+		<section
+			class="ed-2-about bg-edoffwhite py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('assets/img/about-us-bg.png')] before:opacity-[5%] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-multiply">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+				<div class="flex md:flex-col gap-x-[75px] gap-y-[30px]">
+					<!-- left -->
+					<div class="max-w-[46%] md:max-w-full grow shrink-0">
+						<div class="relative flex items-end">
+							<img src="assets/img/about-2-image-1.png" alt="About Image"
+								class="border-[12px] border-white rounded-full">
+
+							<!-- video btn -->
+							<div class="relative shrink-0 -ml-[202px] lg:-ml-[262px] md:-ml-[202px] xs:-ml-[242px] -mb-[24px]">
+								<img src="assets/img/about-2-image-2.png" alt="About Image"
+									class="border-[8px] border-white rounded-full w-[292px] xs:w-[252px] aspect-square">
+								<a href="https://youtu.be/5ppDzM8m9lI?si=zml3HbV176DBsZlg" data-fslightbox="gallery"
+									class="flex items-center justify-center w-[60px] aspect-square bg-white rounded-full text-edyellow absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] before:border before:absolute before:top-[50%] before:-translate-y-[50%] before:left-[50%] before:-translate-x-[50%] before:w-[calc(100%+15px)] before:h-[calc(100%+15px)] before:rounded-full before:transition before:duration-[400ms] hover:bg-edpurple hover:text-white hover:before:border-edpurple"><i
+										class="fa-solid fa-play"></i></a>
+							</div>
+
+							<!-- vectors -->
+							<div>
+								<img src="assets/img/about-2-img-vector.svg" alt="vector"
+									class="absolute pointer-events-none top-[60px] right-[65px] -z-[1]">
+								<img src="assets/img/about-2-img-vector-2.svg" alt="vector"
+									class="absolute pointer-events-none -bottom-[30px] right-0 -z-[1] md:hidden">
+							</div>
+						</div>
+					</div>
+
+					<!-- right -->
+					<div class="max-w-[54%] md:max-w-full">
+						<h6 class="ed-section-sub-title">About us</h6>
+						<h2 class="ed-section-title mb-[6px]">Learn New <span
+								class="inline-block font-bold relative before:absolute before:left-0 before:top-[calc(100%-6px)] before:w-[137px] before:h-[14px] before:bg-[url('assets/img/banner-2-title-vector.svg')] before:bg-[length:100%_100%]">Skills</span>
+							To Go Ahead For Your Career</h2>
+						<p class="text-edgray mb-[34px]">At Revisor, the best coaching platform in Kerala, we believe in empowering students and professionals to take charge of their future. Our comprehensive courses and expert-guided sessions are tailored to help you learn new skills, gain in-depth knowledge, and stay ahead in your career.
+						</p>
+						<ul
+							class="ed-about-list font-medium text-[18px] text-edblue grid grid-cols-2 xxs:grid-cols-1 gap-[20px] xxs:gap-[15px] mb-[52px] *:pl-[40px] *:relative *:before:absolute *:before:left-0 *:before:-top-[3px] *:before:w-[30px] *:before:aspect-square *:before:border *:before:border-edpurple *:before:rounded-full *:before:bg-[url(../assets/img/icon/checkmark.svg)] *:before:bg-no-repeat *:before:bg-[length:15px_13px] *:before:bg-center">
+							<li>Flexible Course Plan</li>
+							<li>Educator Support</li>
+							<li>Expert mentors</li>
+							<li>Online Access</li>
+						</ul>
+						<a href="#" class="ed-btn">know more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ABOUT SECTION END -->
+
+
+		<!-- EVENTS SECTION START -->
+		<section class="ed-2-events py-[120px] xl:py-[80px] md:py-[60px]">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+				<!-- heading -->
+				<div
+					class="flex flex-wrap items-end justify-between gap-x-[30px] gap-y-[15px] border-b border-[#002147]/15 pb-[32px] xxs:pb-[22px] mb-[40px] xxs:mb-[30px]">
+					<div class="left">
+						<h6 class="ed-section-sub-title">upcoming Classes</h6>
+						<h2 class="ed-section-title">upcoming Classes</h2>
+					</div>
+					<!-- nav -->
+					<div
+						class="ed-2-events-slider-nav flex gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-[#808080]/20 *:text-black *:text-[18px]">
+						<button class="prev hover:bg-edpurple hover:border-edpubg-edpurple hover:text-white"><i
+								class="fa-solid fa-angle-left"></i></button>
+						<button class="next hover:bg-edpurple hover:border-edpubg-edpurple hover:text-white"><i
+								class="fa-solid fa-angle-right"></i></button>
+					</div>
+				</div>
+
+				<!-- events slider -->
+				<div class="ed-2-events-slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide w-[50%]">
+							<div class="space-y-[30px]">
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-4.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Skills</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-2.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute w-max max-w-full bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon shrink-0"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Programming</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide w-[50%]">
+							<div class="space-y-[30px]">
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-3.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Skills</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-1.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute w-max max-w-full bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon shrink-0"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Programming</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide w-[50%]">
+							<div class="space-y-[30px]">
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-4.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Skills</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+
+								<!-- single event -->
+								<div
+									class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]">
+									<!-- img -->
+									<div class="relative">
+										<img src="assets/img/event-2.jpg" alt="event cover"
+											class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]">
+										<!-- category -->
+										<span
+											class="absolute w-max max-w-full bottom-0 left-[50%] -translate-x-[50%] inline-flex items-center gap-[8px] bg-edyellow px-[12px] h-[35px] text-edblue font-medium text-[14px] rounded-tr-[8px] rounded-tl-[8px]">
+											<span class="icon shrink-0"><img src="assets/img/icon/convoc-cap.svg" alt="icon"></span>
+											<span>Programming</span>
+										</span>
+									</div>
+									<!-- text -->
+									<div>
+										<div class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]">
+											<span class="icon"><img src="assets/img/icon/clock-fill-yellow.svg" alt="icon"></span>
+											<span>11:00 - 13:30</span>
+										</div>
+										<h5 class="font-semibold text-[20px] text-edblue mb-[4px]"><a href="event-details.html"
+												class="hover:text-edpurple">Learning Communicate To Global</a></h5>
+										<p class="text-edgray mb-[15px]">There are many variations of passages of Lorem Ipsum</p>
+										<a href="#" class="font-medium text-edpurple flex items-center gap-[10px] hover:text-black">Read
+											More <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- EVENTS SECTION END -->
+
+
+	
+
+
+
+
+		<!-- INSTRUCTORS SECTION START -->
+		<section class="bg-edoffwhite py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+				<!-- heading -->
+				<div class="text-center mb-[46px] lg:mb-[36px] md:mb-[26px]">
+					<h2 class="ed-section-sub-title">our INSTRUCTORS</h2>
+					<h6 class="ed-section-title">our expert instructors</h6>
+				</div>
+
+				<!-- instructor cards -->
+				<div class="grid grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 gap-[30px] md:gap-[15px]">
+					<!-- single instructor -->
+					<div class="text-center group">
+						<!-- img -->
+						<div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+							<img src="assets/img/instructor-1.jpg" alt="instructor image"
+								class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+							<!-- socials -->
+							<div class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+								<div
+									class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+									<svg width="17" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+											class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+									</svg>
+								</div>
+								<div
+									class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-linkedin-in"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- txt -->
+						<div>
+							<h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+									class="hover:text-edyellow">Brooklyn Simmons</a></h6>
+							<span class="text-edgray">Digital Expert</span>
+						</div>
+					</div>
+
+					<!-- single instructor -->
+					<div class="text-center group">
+						<!-- img -->
+						<div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+							<img src="assets/img/instructor-2.jpg" alt="instructor image"
+								class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+							<!-- socials -->
+							<div class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+								<div
+									class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+									<svg width="17" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+											class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+									</svg>
+								</div>
+								<div
+									class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-linkedin-in"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- txt -->
+						<div>
+							<h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+									class="hover:text-edyellow">Leslie Alexander</a></h6>
+							<span class="text-edgray">UI/UX Designer</span>
+						</div>
+					</div>
+
+					<!-- single instructor -->
+					<div class="text-center group">
+						<!-- img -->
+						<div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+							<img src="assets/img/instructor-3.jpg" alt="instructor image"
+								class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+							<!-- socials -->
+							<div class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+								<div
+									class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+									<svg width="17" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+											class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+									</svg>
+								</div>
+								<div
+									class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-linkedin-in"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- txt -->
+						<div>
+							<h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+									class="hover:text-edyellow">Ronald Richards</a></h6>
+							<span class="text-edgray">WordPress Expert</span>
+						</div>
+					</div>
+
+					<!-- single instructor -->
+					<div class="text-center group">
+						<!-- img -->
+						<div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+							<img src="assets/img/instructor-4.jpg" alt="instructor image"
+								class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+							<!-- socials -->
+							<div class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+								<div
+									class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+									<svg width="17" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+											class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+									</svg>
+								</div>
+								<div
+									class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-linkedin-in"></i></a>
+									<a href="#"
+										class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+											class="fa-brands fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- txt -->
+						<div>
+							<h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+									class="hover:text-edyellow">Kristin Watson</a></h6>
+							<span class="text-edgray">UI Designer</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- vectors -->
+				<div class="lg:hidden">
+					<div
+						class="pointer-events-none w-[434px] aspect-square rounded-full bg-edpurple/15 absolute -z-[1] top-0 left-[56px] -translate-y-[50%]">
+					</div>
+					<div
+						class="pointer-events-none w-[694px] aspect-square rounded-full bg-edpurple/10 absolute -z-[1] bottom-0 right-[21px] translate-y-[50%]">
+					</div>
+					<img src="assets/img/admission-vector-2.svg" alt="vector" class="absolute -z-[1] bottom-[154px] right-[58px]">
+					<img src="assets/img/instructor-vector.svg" alt="vector" class="absolute -z-[1] top-[120px] left-0">
+				</div>
+			</div>
+		</section>
+		<!-- INSTRUCTORS SECTION END -->
+
+
+		<!-- TESTIMONIAL SECTION START -->
+		<section class="py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+				<div class="flex md:flex-col gap-[30px]">
+					<!-- heading -->
+					<div class="max-w-[370px] md:max-w-full shrink-0">
+						<h6 class="ed-section-sub-title">Testimonials</h6>
+						<h2 class="ed-section-title mb-[36px] md:mb-[26px]">What Students Say About Us</h2>
+						<!-- slider nav -->
+						<div
+							class="ed-2-testimonial-slider-nav flex gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-[#808080]/20 *:text-edpurple *:text-[18px]">
+							<button class="prev hover:bg-edpurple hover:border-edpubg-edpurple hover:text-white"><i
+									class="fa-solid fa-angle-left"></i></button>
+							<button class="next hover:bg-edpurple hover:border-edpubg-edpurple hover:text-white"><i
+									class="fa-solid fa-angle-right"></i></button>
+						</div>
+					</div>
+
+					<!-- slider container -->
+					<div>
+						<div class="ed-2-testimonial-slider swiper max-w-[1200px]">
+							<div class="swiper-wrapper">
+								<!-- single testimony -->
+								<div class="swiper-slide w-[570px] lg:w-[540px] xs:w-full">
+									<div class="et-testimony bg-white p-[30px] xxs:p-[20px] border border-[#d9d9d9] rounded-[20px]">
+										<!-- single testimony heading -->
+										<div
+											class="et-testimony__heading flex xxs:flex-col items-center gap-[22px] mb-[42px] xxs:mb-[22px]">
+											<img src="assets/img/user-2.png" alt="reviewer image"
+												class="w-[70px] aspect-square rounded-full shrink-0">
+
+											<div class="flex items-center justify-between grow xxs:w-full">
+												<div class="left">
+													<h5 class="text-edblue font-semibold text-[20px] mb-[1px]">Esther Howard</h5>
+													<h6 class="text-[16px] text-edpurple font-normal">Nursing Assistant</h6>
+												</div>
+
+												<div class="right">
+													<img src="assets/img/icon/quotation.svg" alt="quotation mark">
+												</div>
+											</div>
+										</div>
+
+										<p class="text-[#445375] font-normal mb-[21px]">Donec ac lacus placerata dolor duis consequat
+											placerat sit amet a elit. In volutpat, lacus in egestas finibus nisi orci tincidunt risus, a
+											dapibus </p>
+
+										<!-- rating stars -->
+										<div
+											class="inline-flex items-center gap-[6px] border border-edyellow rounded-full px-[10px] h-[40px]">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+										</div>
+									</div>
+								</div>
+
+								<!-- single testimony -->
+								<div class="swiper-slide w-[570px] lg:w-[540px] xs:w-full">
+									<div class="et-testimony bg-white p-[30px] xxs:p-[20px] border border-[#d9d9d9] rounded-[20px]">
+										<!-- single testimony heading -->
+										<div
+											class="et-testimony__heading flex xxs:flex-col items-center gap-[22px] mb-[42px] xxs:mb-[22px]">
+											<img src="assets/img/user-2.png" alt="reviewer image"
+												class="w-[70px] aspect-square rounded-full shrink-0">
+
+											<div class="flex items-center justify-between grow xxs:w-full">
+												<div class="left">
+													<h5 class="text-edblue font-semibold text-[20px] mb-[1px]">Esther Howard</h5>
+													<h6 class="text-[16px] text-edpurple font-normal">Nursing Assistant</h6>
+												</div>
+
+												<div class="right">
+													<img src="assets/img/icon/quotation.svg" alt="quotation mark">
+												</div>
+											</div>
+										</div>
+
+										<p class="text-[#445375] font-normal mb-[21px]">Donec ac lacus placerata dolor duis consequat
+											placerat sit amet a elit. In volutpat, lacus in egestas finibus nisi orci tincidunt risus, a
+											dapibus </p>
+
+										<!-- rating stars -->
+										<div
+											class="inline-flex items-center gap-[6px] border border-edyellow rounded-full px-[10px] h-[40px]">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+										</div>
+									</div>
+								</div>
+
+								<!-- single testimony -->
+								<div class="swiper-slide w-[570px] lg:w-[540px] xs:w-full">
+									<div class="et-testimony bg-white p-[30px] xxs:p-[20px] border border-[#d9d9d9] rounded-[20px]">
+										<!-- single testimony heading -->
+										<div
+											class="et-testimony__heading flex xxs:flex-col items-center gap-[22px] mb-[42px] xxs:mb-[22px]">
+											<img src="assets/img/user-2.png" alt="reviewer image"
+												class="w-[70px] aspect-square rounded-full shrink-0">
+
+											<div class="flex items-center justify-between grow xxs:w-full">
+												<div class="left">
+													<h5 class="text-edblue font-semibold text-[20px] mb-[1px]">Esther Howard</h5>
+													<h6 class="text-[16px] text-edpurple font-normal">Nursing Assistant</h6>
+												</div>
+
+												<div class="right">
+													<img src="assets/img/icon/quotation.svg" alt="quotation mark">
+												</div>
+											</div>
+										</div>
+
+										<p class="text-[#445375] font-normal mb-[21px]">Donec ac lacus placerata dolor duis consequat
+											placerat sit amet a elit. In volutpat, lacus in egestas finibus nisi orci tincidunt risus, a
+											dapibus </p>
+
+										<!-- rating stars -->
+										<div
+											class="inline-flex items-center gap-[6px] border border-edyellow rounded-full px-[10px] h-[40px]">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+											<img src="assets/img/icon/star.svg" alt="star">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- vector -->
+			<img src="assets/img/testimonial-2-vector.svg" alt="vector"
+				class="absolute -z-[1] pointer-events-none left-[44px] bottom-[60px]">
+		</section>
+		<!-- TESTIMONIAL SECTION END -->
+
+
+
+		<!-- <section class="py-[80px] bg-edblue">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+				<div class="flex md:flex-wrap gap-[70px] lg:gap-[50px] *:flex-auto">
+
+					<div
+						class="text-white text-center md:w-[45%] shrink-0 pr-[80px] lg:pr-[60px] last:pr-0 border-r border-white/20 last:border-0 md:even:pr-0 md:even:border-r-0 xs:pr-0 xs:border-r-0">
+						<img src="assets/img/stat-1.png" alt="icon" class="w-max max-w-full mx-auto mb-[7px]">
+						<h3 class="font-bold text-[36px]">25+</h3>
+						<h6 class="font-medium">Year of experience</h6>
+					</div>
+
+
+					<div
+						class="text-white text-center md:w-[45%] shrink-0 pr-[80px] lg:pr-[60px] last:pr-0 border-r border-white/20 last:border-0 md:even:pr-0 md:even:border-r-0 xs:pr-0 xs:border-r-0">
+						<img src="assets/img/stat-2.png" alt="icon" class="w-max max-w-full mx-auto mb-[7px]">
+						<h3 class="font-bold text-[36px]">6,500+</h3>
+						<h6 class="font-medium">Class Completed</h6>
+					</div>
+
+
+					<div
+						class="text-white text-center md:w-[45%] shrink-0 pr-[80px] lg:pr-[60px] last:pr-0 border-r border-white/20 last:border-0 md:even:pr-0 md:even:border-r-0 xs:pr-0 xs:border-r-0">
+						<img src="assets/img/stat-3.png" alt="icon" class="w-max max-w-full mx-auto mb-[7px]">
+						<h3 class="font-bold text-[36px]">100+</h3>
+						<h6 class="font-medium">Experts Instructors</h6>
+					</div>
+
+
+					<div
+						class="text-white text-center md:w-[45%] shrink-0 pr-[80px] lg:pr-[60px] last:pr-0 border-r border-white/20 last:border-0 md:even:pr-0 md:even:border-r-0 xs:pr-0 xs:border-r-0">
+						<img src="assets/img/stat-4.png" alt="icon" class="w-max max-w-full mx-auto mb-[7px]">
+						<h3 class="font-bold text-[36px]">6,561+</h3>
+						<h6 class="font-medium">Students Enrolled</h6>
+					</div>
+				</div>
+			</div>
+		</section> -->
+	
+
+
+
+
+
+		<!-- NEWS SECTION START -->
+		<!-- <section class="pt-[120px] xl:pt-[80px] md:pt-[60px]" style="margin-bottom: 50px;">
+			<div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+
+				<div class="flex flex-wrap items-end justify-between mb-[60px] lg:mb-[40px] gap-[15px]">
+					<div class="max-w-[35%] md:max-w-[40%] sm:max-w-none">
+						<h6 class="ed-section-sub-title">latest news</h6>
+						<h2 class="ed-section-title">our latest news & blog </h2>
+					</div>
+
+					<a href="news-grid.html"
+						class="ed-btn !h-[56px] gap-[10px] border border-[#E5E5E5] !bg-transparent !text-edpurple hover:!bg-edpurple hover:!border-edpurple hover:!text-white">View
+						all blog <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+				</div>
+
+				<div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
+					<div class="rounded-[20px] bg-edoffwhite overflow-hidden">
+						<div class="relative">
+							<img src="assets/img/blog-big.jpg" alt="blog cover" class="w-full aspect-[570/290]">
+							<div
+								class="absolute top-[30px] left-[30px] bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+								<span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+								<span class="px-[11px] py-[2px] block">June</span>
+							</div>
+						</div>
+
+						<div class="px-[30px] xxs:px-[20px] py-[22px] pt-[27px]">
+							<div class="flex items-center gap-[16px] mb-[9px]">
+								<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+									<span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+									<span>By Admin</span>
+								</div>
+
+								<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+									<span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+									<span>2 Comments</span>
+								</div>
+							</div>
+							<h5 class="font-medium text-[20px]"><a href="news-details.html"
+									class="hover:text-edpurple">Collaboratively pontificate bleeding edge resources with inexpensive
+									methodologies</a></h5>
+						</div>
+					</div>
+
+					<div class="bg-edoffwhite rounded-[20px] p-[30px] xxs:p-[20px] space-y-[26px]">
+						<div
+							class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0">
+							<div class="shrink-0 rounded-[10px] overflow-hidden">
+								<img src="assets/img/news-2-img-2.jpg" alt="blog cover" class="w-[142px] aspect-[142/153] object-cover">
+							</div>
+
+							<div>
+								<div class="flex items-center gap-[16px] mb-[9px]">
+									<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+										<span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+										<span>By Admin</span>
+									</div>
+
+									<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+										<span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+										<span>2 Comments</span>
+									</div>
+								</div>
+								<h5 class="font-medium text-[20px] mb-[17px]"><a href="news-details.html"
+										class="hover:text-edpurple">Collaboratively pontificate bleedi edge resources</a></h5>
+
+								<div
+									class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+									<span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+									<span class="px-[11px] py-[2px] block">June</span>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0">
+							<div class="shrink-0 rounded-[10px] overflow-hidden">
+								<img src="assets/img/news-2-img-3.jpg" alt="blog cover" class="w-[142px] aspect-[142/153] object-cover">
+							</div>
+
+							<div>
+								<div class="flex items-center gap-[16px] mb-[9px]">
+									<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+										<span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+										<span>By Admin</span>
+									</div>
+
+									<div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+										<span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+										<span>2 Comments</span>
+									</div>
+								</div>
+								<h5 class="font-medium text-[20px] mb-[17px]"><a href="news-details.html"
+										class="hover:text-edpurple">Collaboratively pontificate bleedi edge resources</a></h5>
+
+								<div
+									class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+									<span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+									<span class="px-[11px] py-[2px] block">June</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- NEWS SECTION END -->
+
+		<!-- partners -->
+		<!-- <div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+			<div class="ed-partners-slider swiper my-[100px] xl:my-[70px] md:my-[50px]">
+				<div class="swiper-wrapper">
+					
+					<div class="swiper-slide"><img src="assets/img/partner-1.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-2.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-3.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-4.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-5.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-6.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-1.png" alt="Partner Logo"></div>
+					
+					<div class="swiper-slide"><img src="assets/img/partner-2.png" alt="Partner Logo"></div>
+				</div>
+			</div>
+		</div> -->
+	</main>
+
+	<!-- FOOTER SECTION START -->
+	<footer
+		class="bg-edblue relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white">
+		<div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+			<!-- footer top -->
+			<div class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20">
+				<!-- footer about -->
+				<div class="max-w-[370px] xxs:max-w-full">
+					<a href="index.html" class="inline-block mb-[23px]"><img src="assets/img/logo-light.png" alt="logo"></a>
+					<p class="text-[#D9D9D9] mb-[19px]">Nullam interdum libero vitae pretium aliquam donec nibh purus laoreet in
+						ullamcorper vel malesuada sit amet enim.</p>
+
+					<ul class="space-y-[17px]">
+						<li class="flex items-center gap-[8px]">
+							<span class="icon"><img src="assets/img/call-icon-yellow.svg" alt="icon"></span>
+							<a href="tel:+6108-666-0112" class="hover:text-edyellow">+6108-666-0112</a>
+						</li>
+
+						<li class="flex items-center gap-[8px]">
+							<span class="icon"><img src="assets/img/message-yellow.svg" alt="icon"></span>
+							<a href="mailto:info@gmail.com" class="hover:text-edyellow">info@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- footer widget -->
+				<div>
+					<h6
+						class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+						Quick Links</h6>
+
+					<div class="space-y-[18px]">
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Edutics About</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Contact Us</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Blog & News</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> FAQ’S</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Login / Register</a>
+					</div>
+				</div>
+
+				<!-- footer widget -->
+				<div>
+					<h6
+						class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+						Main Navigation</h6>
+
+					<div class="space-y-[18px]">
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Admission</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Research</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Academics</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Student Life</a>
+						<a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img
+									src="assets/img/double-arrow.svg" alt="icon"></span> Conferences</a>
+					</div>
+				</div>
+
+				<!-- footer widget -->
+				<div class="max-w-[300px]">
+					<h6
+						class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+						Newsletter</h6>
+
+					<div>
+						<p class="text-[#d9d9d9]/80 mb-[21px]">Sign up to seargin weekly newsletter to get the latest updates.</p>
+
+						<!-- newsltr form -->
+						<form class="border border-white/20 rounded-full flex h-[56px] p-[4px]">
+							<input type="email" name="email" placeholder="Enter Email Address"
+								class="text-[14px] bg-transparent w-full rounded-full focus:outline-none px-[20px]">
+							<button
+								class="bg-edyellow rounded-full aspect-square flex items-center justify-center hover:bg-edpurple"><img
+									src="assets/img/icon/submit-icon.svg" alt="icon"></button>
+						</form>
+
+						<!-- social links -->
+						<div class="flex gap-[20px] mt-[30px]">
+							<span
+								class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]">Follow
+								on</span>
+							<span class="inline-flex gap-[16px] text-[#d9d9d9]">
+								<a href="#" class="hover:text-edyellow"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="hover:text-edyellow"><i class="fa-brands fa-x-twitter"></i></a>
+								<a href="#" class="hover:text-edyellow"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="#" class="hover:text-edyellow"><i class="fa-brands fa-youtube"></i></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- footer bottom -->
+			<div class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]">
+				<p>&copy; All Copyright 2024 by Edutics</p>
+
+				<div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+					<a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+					<a href="#" class="hover:text-edyellow">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER SECTION END -->
+
+	<!-- js -->
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/fslightbox/fslightbox.js"></script>
+	<script src="assets/vendor/mixitup/mixitup.min.js"></script>
+	<script src="assets/vendor/slim-select/slimselect.min.js"></script>
+
+	<script src="assets/js/main.js"></script>
+	<!-- <script src="assets/js/header-2.js"></script> -->
+	<script src="assets/js/accordion.js"></script>
+</body>
+
+
+<!-- Mirrored from edutics.temptics.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 04:27:58 GMT -->
+
+</html>
